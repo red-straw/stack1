@@ -29,7 +29,7 @@ C언어의 기본적인 자료구조
 3) stack pointer : stack의 현재위치를 가리킨다
 4) stack이 비면 -1이 된다
 5) LIFO : Last In First Out (후입선출)
-6) PEEK : 관찰
+6) Seek : 관찰
 
 스택의 용도
 1) 웹브라우저 앞으로가기 뒤로가기
