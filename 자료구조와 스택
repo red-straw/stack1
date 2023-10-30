@@ -1,0 +1,49 @@
+C언어의 기본적인 자료구조
+1. 변수형
+- int, float, double, chat...etc.
+
+2. 배열
+  1) 문자배열
+  2) String "ab\0"(문자배열과의 차이 : NULL(\0)이 있다)
+
+3. 구조체()
+  struct st{
+      char n[10];
+      int k,e,m;
+  };
+
+4. union(공용체)
+5. enum (열거형)
+
+6. 리스트 (마지막으로 찍힌 데이터는 null(\0)을 반드시 찍어야한다)
+
+7. 트리자료형(root)(끝에는 반드시 null)
+
+8. 스택(stack)
+
+
+
+스택의 특징
+1) push : 데이터를 집어넣는다
+2) pop : 데이터를 꺼낸다
+3) stack pointer : stack의 현재위치를 가리킨다
+4) stack이 비면 -1이 된다
+5) LIFO : Last In First Out (후입선출)
+6) PEEK : 관찰
+
+스택의 용도
+1) 웹브라우저 앞으로가기 뒤로가기
+2) undo redo(ctlc ctlv)
+3) 함수호출하면 리턴할 주소를 스택에 넣는다 
+
+심플스택
+
+﻿#include<stdio.h>
+int sp=-1;  // 스택 포인터의 약자
+int v[1000];  // 정수를 담는다
+void push(int i){ v[++sp] = i; }  //
+int pop(){ return(v[sp--]); }     //  
+void main(){
+   push(1); push(2); push(3);     //
+   printf("%d\n", pop()); printf("%d\n", pop()); printf("%d\n", pop());  //
+}
